@@ -5,7 +5,7 @@ local Signal = require(script.Signal)
 module.__index = module
 -- PRIVATE FUNCTIONS --
 function module:_UDim2(handler)
-	if not (type(handler) == UDim2) then
+	if not type(handler) == UDim2 then
 		error("UDim2 expected got %s"):format(handler)
 	end
 	return handler
