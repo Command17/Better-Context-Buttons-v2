@@ -6,7 +6,7 @@ module.__index = module
 -- PRIVATE FUNCTIONS --
 function module:_UDim2(handler)
 	if not type(handler) == UDim2 then
-		error("UDim2 expected got %s"):format(handler)
+		error("UDim2 expected got %s"):format(typeof(handler))
 	end
 	return handler
 end
