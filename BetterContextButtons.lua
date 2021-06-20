@@ -101,6 +101,7 @@ function module:SetImage(url)
 	local Image = Instance.new("ImageLabel", self.Button)
 	Image.Size = self.Button.Size
 	Image.BackgroundTransperency = 1
+	Image.Image = url
 end
 
 return module
